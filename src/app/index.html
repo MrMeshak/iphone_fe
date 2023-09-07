@@ -3,39 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header></header>
 
-    <section class="calculator">
-      <div class="calc-hist"></div>
-      <div class="calc-disp"></div>
+    <section class="home"></section>
+
+    <section class="calc">
+      <div class="calc-hist">
+        <div class="calc-hist__card">
+          -3&times;(4+5)&times;2 <span>=5</span>
+        </div>
+      </div>
+      <div class="calc-disp">-3&times;(4+5)&times;2</div>
       <div class="calc-pad">
-        <button class="calc-pad__btn">AC</button>
-        <button class="calc-pad__btn">&#x232B;</button>
-        <button class="calc-pad__btn">&lbrack;</button>
-        <button class="calc-pad__btn">&rbrack;</button>
+        <button class="calc-pad__btn calc-pad__btn--grey">AC</button>
+        <button class="calc-pad__btn calc-pad__btn--grey">(</button>
+        <button class="calc-pad__btn calc-pad__btn--grey">)</button>
+        <button class="calc-pad__btn calc-pad__btn--orange">&divide;</button>
         <button class="calc-pad__btn">7</button>
         <button class="calc-pad__btn">8</button>
         <button class="calc-pad__btn">9</button>
-        <button class="calc-pad_btn">&times;</button>
+        <button class="calc-pad__btn calc-pad__btn--orange">&times;</button>
         <button class="calc-pad__btn">4</button>
         <button class="calc-pad__btn">5</button>
         <button class="calc-pad__btn">6</button>
-        <button class="calc-pad__btn">&minus;</button>
+        <button class="calc-pad__btn calc-pad__btn--orange">&minus;</button>
         <button class="calc-pad__btn">1</button>
         <button class="calc-pad__btn">2</button>
         <button class="calc-pad__btn">3</button>
-        <button class="calc-pad__btn">&plus;</button>
+        <button class="calc-pad__btn calc-pad__btn--orange">&plus;</button>
+        <button class="calc-pad__btn calc-pad__btn--grey">&#9003;</button>
         <button class="calc-pad__btn">0</button>
         <button class="calc-pad__btn">.</button>
-        <button class="calc-pad__btn">&equals;</button>
-        <button class="calc-pad__btn">&divide;</button>
+        <button class="calc-pad__btn calc-pad__btn--orange">&equals;</button>
       </div>
     </section>
 
-    <section class="sketch"></section>
+    <section class="sketch">
+      <h3>Sketch</h3>
+      <div class="sketch-disp">
+        <div></div>
+      </div>
+      <div class="sketch-menu">
+        <button>draw</button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="sketch-palet">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </section>
 
     <section class="weather"></section>
   </body>

@@ -1,0 +1,10 @@
+@use '../../abstracts';
+
+.sketch {
+  padding: 1rem;
+  max-width: 30rem;
+  aspect-ratio: 9/19.5;
+  background-color: black;
+  border-radius: 2.5rem;
+  background-color: abstracts.$sketch-slate-light;
+}

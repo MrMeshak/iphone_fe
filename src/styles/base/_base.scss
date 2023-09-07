@@ -1,0 +1,5 @@
+@use '../abstracts';
+
+body {
+  font-family: abstracts.$roboto-mono, Arial, Helvetica, sans-serif;
+}

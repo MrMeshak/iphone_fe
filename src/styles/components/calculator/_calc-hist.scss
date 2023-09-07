@@ -1,0 +1,21 @@
+@use '../../abstracts';
+
+.calc-hist {
+  padding: 0.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__card {
+    font-size: 1.5rem;
+    color: abstracts.$calc-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+
+    span {
+      font-size: 3rem;
+    }
+  }
+}
