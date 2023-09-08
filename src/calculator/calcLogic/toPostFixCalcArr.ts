@@ -4,8 +4,8 @@ import {
   PostFixCalcOperation,
   PostFixCalcToken,
   operatorPrecedence,
-} from './calculator.model';
-import { toInFixCalcArr } from './toInFixCalcArr';
+} from './calculator.model.js';
+import { toInFixCalcArr } from './toInFixCalcArr.js';
 
 export function toPostFixCalcArr(calcArr: string[]) {
   const inFixCalcArr: CalcToken[] = toInFixCalcArr(calcArr);

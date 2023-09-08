@@ -1,7 +1,7 @@
-import { evaluatePostFixCalcArr } from './evaluatePostFixCalcArr';
-import { isValidCalcStr } from './isValidCalcStr';
-import { splitCalcStr } from './splitCalcStr';
-import { toPostFixCalcArr } from './toPostFixCalcArr';
+import { evaluatePostFixCalcArr } from './evaluatePostFixCalcArr.js';
+import { isValidCalcStr } from './isValidCalcStr.js';
+import { splitCalcStr } from './splitCalcStr.js';
+import { toPostFixCalcArr } from './toPostFixCalcArr.js';
 
 export interface ICalcError {
   __typename: 'ICalcError';
@@ -17,6 +17,7 @@ export interface ICalcInvalidCalcStr {
 
 export interface ICalcSuccess {
   __typename: 'ICalcSuccess';
+  calcStr: string;
   result: number | undefined;
 }
 
@@ -43,6 +44,7 @@ export function calculate(calcStr: string): CalcResult {
 
   return {
     __typename: 'ICalcSuccess',
+    calcStr: calcStr,
     result: result,
   };
 }

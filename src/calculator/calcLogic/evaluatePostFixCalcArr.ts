@@ -1,4 +1,4 @@
-import { PostFixCalcToken } from './calculator.model';
+import { PostFixCalcToken } from './calculator.model.js';
 
 export function evaluatePostFixCalcArr(postFixCalcArr: PostFixCalcToken[]) {
   const stack: number[] = [];

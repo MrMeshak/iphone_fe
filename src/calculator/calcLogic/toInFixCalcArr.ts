@@ -1,4 +1,4 @@
-import { CalcToken } from './calculator.model';
+import { CalcToken } from './calculator.model.js';
 
 export function toInFixCalcArr(calcStrArr: string[]) {
   const inFixCalcArr: CalcToken[] = calcStrArr.map((token) => {

@@ -7,7 +7,7 @@ export function isValidCalcStr(calculationStr: string) {
     return false;
   }
 
-  //check for invalid operators - '**', '*/', '*)', '*.', '//', '/*', '/)', '/.', '-*', '-/', '-)', '-.' '+*', '+/', '+)','+.' '(*', '(/', '()',, '..', '.*', './' , '.+', '.(' '.)'
+  //check for invalid operators - '**', '*/', '*)', '//', '/*', '/)', '-*', '-/', '-)', '+*', '+/', '+)', '(*', '(/', '()', '..', '.*', './' , '.+', '.(' '.)'
   //check for invalid triple or more operators (+-/*.) in a row
   //prettier-ignore
   if (/(\*[*/)])|(\/[/*)])|(-[*/)])|(\+[*/)])|(\([*/)])|([-+/*.]{3,})|(\.[-+/*.()])/.test(calcStr)) {

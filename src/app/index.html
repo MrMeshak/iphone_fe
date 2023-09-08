@@ -11,62 +11,73 @@
     />
 
     <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../calculator/index.js" type="module"></script>
     <title>Document</title>
   </head>
   <body>
     <header></header>
+    <main>
+      <section class="home"></section>
 
-    <section class="home"></section>
-
-    <section class="calc">
-      <div class="calc-hist">
-        <div class="calc-hist__card">
-          -3&times;(4+5)&times;2 <span>=5</span>
+      <section class="calc">
+        <div class="calc-hist">
+          <div class="calc-hist__card">
+            -3&times;(4+5)&times;2 <span>=5</span>
+          </div>
         </div>
-      </div>
-      <div class="calc-disp">-3&times;(4+5)&times;2</div>
-      <div class="calc-pad">
-        <button class="calc-pad__btn calc-pad__btn--grey">AC</button>
-        <button class="calc-pad__btn calc-pad__btn--grey">(</button>
-        <button class="calc-pad__btn calc-pad__btn--grey">)</button>
-        <button class="calc-pad__btn calc-pad__btn--orange">&divide;</button>
-        <button class="calc-pad__btn">7</button>
-        <button class="calc-pad__btn">8</button>
-        <button class="calc-pad__btn">9</button>
-        <button class="calc-pad__btn calc-pad__btn--orange">&times;</button>
-        <button class="calc-pad__btn">4</button>
-        <button class="calc-pad__btn">5</button>
-        <button class="calc-pad__btn">6</button>
-        <button class="calc-pad__btn calc-pad__btn--orange">&minus;</button>
-        <button class="calc-pad__btn">1</button>
-        <button class="calc-pad__btn">2</button>
-        <button class="calc-pad__btn">3</button>
-        <button class="calc-pad__btn calc-pad__btn--orange">&plus;</button>
-        <button class="calc-pad__btn calc-pad__btn--grey">&#9003;</button>
-        <button class="calc-pad__btn">0</button>
-        <button class="calc-pad__btn">.</button>
-        <button class="calc-pad__btn calc-pad__btn--orange">&equals;</button>
-      </div>
-    </section>
+        <div class="calc-disp">-3&times;(4+5)&times;2</div>
+        <div class="calc-pad">
+          <!-- prettier-ignore -->
+          <button id="calcBtnClear" class="calc-pad__btn calc-pad__btn--grey">AC</button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnLBracket" class="calc-pad__btn calc-pad__btn--grey">(</button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnRBracket" class="calc-pad__btn calc-pad__btn--grey" >) </button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnDivide" class="calc-pad__btn calc-pad__btn--orange" > &divide; </button>
+          <button id="calcBtn7" class="calc-pad__btn">7</button>
+          <button id="calcBtn8" class="calc-pad__btn">8</button>
+          <button id="calcBtn9" class="calc-pad__btn">9</button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnMultiply" class="calc-pad__btn calc-pad__btn--orange">&times;</button>
+          <button id="calcBtn4" class="calc-pad__btn">4</button>
+          <button id="calcBtn5" class="calc-pad__btn">5</button>
+          <button id="calcBtn6" class="calc-pad__btn">6</button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnMinus" class="calc-pad__btn calc-pad__btn--orange">&minus;</button>
+          <button id="calcBtn1" class="calc-pad__btn">1</button>
+          <button id="calcBtn2" class="calc-pad__btn">2</button>
+          <button id="calcBtn3" class="calc-pad__btn">3</button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnPlus" class="calc-pad__btn calc-pad__btn--orange">&plus;</button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnDelete" class="calc-pad__btn calc-pad__btn--grey">&#9003;</button>
+          <button id="calcBtn0" class="calc-pad__btn">0</button>
+          <button id="calcBtnDot" class="calc-pad__btn">.</button>
+          <!-- prettier-ignore -->
+          <button id="calcBtnEquals" class="calc-pad__btn calc-pad__btn--orange" > &equals; </button>
+        </div>
+      </section>
 
-    <section class="sketch">
-      <h3>Sketch</h3>
-      <div class="sketch-disp">
-        <div></div>
-      </div>
-      <div class="sketch-menu">
-        <button>draw</button>
-        <button></button>
-        <button></button>
-      </div>
-      <div class="sketch-palet">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-      </div>
-    </section>
+      <section class="sketch">
+        <h3>Sketch</h3>
+        <div class="sketch-disp">
+          <div></div>
+        </div>
+        <div class="sketch-menu">
+          <button>draw</button>
+          <button></button>
+          <button></button>
+        </div>
+        <div class="sketch-palet">
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+      </section>
 
-    <section class="weather"></section>
+      <section class="weather"></section>
+    </main>
   </body>
 </html>

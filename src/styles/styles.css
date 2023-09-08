@@ -80,14 +80,14 @@ select {
   max-width: 30rem;
   aspect-ratio: 9/19.5;
   border: 1px solid black;
-  border-radius: 2.5rem;
+  border-radius: 3rem;
 }
 
 .calc {
   max-width: 30rem;
   aspect-ratio: 9/19.5;
   background-color: black;
-  border-radius: 2.5rem;
+  border-radius: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -153,11 +153,13 @@ select {
   max-width: 30rem;
   aspect-ratio: 9/19.5;
   background-color: black;
-  border-radius: 2.5rem;
-  background-color: #edf2f4;
+  border: 1px solid black;
+  border-radius: 3rem;
+  background-color: #ffffff;
 }
 
 .sketch-disp {
   height: 30rem;
   background-color: white;
+  border-radius: 3rem;
 }
