@@ -5,14 +5,17 @@ import { toPostFixCalcArr } from './toPostFixCalcArr.js';
 
 export interface ICalcError {
   __typename: 'ICalcError';
+  calcStr: string;
 }
 
 export interface ICalcEmptyCalcStr {
   __typename: 'ICalcEmptyCalcStr';
+  calcStr: string;
 }
 
 export interface ICalcInvalidCalcStr {
   __typename: 'ICalcInvalidCalcStr';
+  calcStr: string;
 }
 
 export interface ICalcSuccess {
@@ -29,11 +32,11 @@ export type CalcResult =
 
 export function calculate(calcStr: string): CalcResult {
   if (calcStr === '') {
-    return { __typename: 'ICalcEmptyCalcStr' };
+    return { __typename: 'ICalcEmptyCalcStr', calcStr: calcStr };
   }
 
   if (!isValidCalcStr(calcStr)) {
-    return { __typename: 'ICalcInvalidCalcStr' };
+    return { __typename: 'ICalcInvalidCalcStr', calcStr: calcStr };
   }
 
   const result = evaluatePostFixCalcArr(

@@ -93,3 +93,8 @@ document
   ?.addEventListener('click', (e: Event) => {
     actions.backSpaceCalcStr();
   });
+
+document.querySelector('#calcHomeBtn')?.addEventListener('click', () => {
+  const calcApp = document.querySelector('#calcApp');
+  calcApp?.classList.add('calc--hide');
+});

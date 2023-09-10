@@ -1,0 +1,18 @@
+.home-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  &__btn {
+    width: 40%;
+    height: 4px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    opacity: 60%;
+    cursor: pointer;
+
+    &--dark {
+      background-color: #000000;
+    }
+  }
+}

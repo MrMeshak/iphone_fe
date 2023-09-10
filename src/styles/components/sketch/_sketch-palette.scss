@@ -1,0 +1,44 @@
+@use '../../abstracts';
+
+.sketch-palette {
+  width: 100%;
+  padding: 1rem 1rem;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  button {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+}
+
+#sketchRedBtn {
+  background-color: #f43f5e;
+}
+
+#sketchOrangeBtn {
+  background-color: #f97316;
+}
+
+#sketchYellowBtn {
+  background-color: #eab308;
+}
+
+#sketchGreenBtn {
+  background-color: #22c55e;
+}
+
+#sketchBlueBtn {
+  background-color: #0ea5e9;
+}
+
+#sketchPurpleBtn {
+  background-color: #8b5cf6;
+}
+
+#sketchBlackBtn {
+  background-color: abstracts.$sketch-slate-dark;
+}

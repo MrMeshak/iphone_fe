@@ -1,0 +1,41 @@
+@use '../../abstracts';
+
+.home-dock {
+  z-index: 1;
+  margin: 1rem;
+  height: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(225, 225, 255, 0.4);
+  border-radius: 2.8rem;
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
+
+  &__btn {
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+  }
+}
+
+#sketchAppBtn {
+  background-color: white;
+  svg {
+    height: 3.5rem;
+  }
+}
+
+#calcAppBtn {
+  background-color: black;
+  svg {
+    height: 4rem;
+    fill: white;
+  }
+}

@@ -1,0 +1,27 @@
+.top-bar {
+  z-index: 12;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 1rem 2rem;
+  color: white;
+  fill: white;
+
+  &__time {
+    display: flex;
+    align-items: center;
+    font-size: large;
+  }
+
+  &__status {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &--dark {
+    fill: black;
+    color: black;
+  }
+}

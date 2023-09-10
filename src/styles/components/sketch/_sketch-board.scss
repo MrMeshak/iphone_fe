@@ -1,0 +1,10 @@
+@use '../../abstracts';
+
+.sketch-board {
+  width: 100%;
+  aspect-ratio: 9/19;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(38, 1fr);
+  border: 2px solid abstracts.$sketch-slate-dark;
+}

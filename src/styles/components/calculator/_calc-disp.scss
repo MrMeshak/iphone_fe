@@ -1,7 +1,14 @@
 @use '../../abstracts';
 
 .calc-disp {
-  padding: 0.5rem 1rem;
+  padding: 0rem;
+  height: 4rem;
+  margin: 1rem 2rem;
   font-size: 2.8rem;
   color: abstracts.$calc-white;
+  overflow: hidden;
+
+  p {
+    float: right;
+  }
 }
