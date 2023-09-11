@@ -23,13 +23,11 @@ export function isValidCalcStr(calculationStr: string) {
     } else if (calcStr.charAt(i) === ')') {
       bracketBalCount--;
       if (bracketBalCount < 0) {
-        console.log('invalidCalcStr: has invalid brackets');
         return false;
       }
     }
   }
   if (bracketBalCount !== 0) {
-    console.log('invalidCalcStr: has too many brackets');
     return false;
   }
 
@@ -37,7 +35,6 @@ export function isValidCalcStr(calculationStr: string) {
   const sections = calcStr.split(/[-+*/()]{1,}/g);
   const hasNaN = sections.some((section) => section && isNaN(Number(section)));
   if (hasNaN) {
-    console.log('invalidCalcStr: has invalid numbers');
     return false;
   }
 

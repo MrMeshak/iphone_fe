@@ -58,6 +58,5 @@ export function splitCalcStr(calculationStr: string) {
     }
   }
 
-  console.log('calcSplit:', calcStrArr);
   return calcStrArr;
 }

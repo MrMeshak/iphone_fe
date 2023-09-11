@@ -14,6 +14,6 @@ export function toInFixCalcArr(calcStrArr: string[]) {
     }
     return Number(token);
   });
-  console.log('inFixArr:', inFixCalcArr);
+
   return inFixCalcArr;
 }
