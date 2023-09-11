@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && swc ./src -d dist && copyfiles -u 1 src/**/*.html src/**/*.css src/images/* dist/",
+    "build": "rimraf dist && swc ./src -d dist && copyfiles -u 1 src/**/*.html src/**/*.css src/assets/**/* dist/",
     "test": "jest --verbose ./src",
     "sass:build": "sass ./src/styles/styles.scss ./src/styles/styles.css --no-source-map",
     "sass:watch": "sass ./src/styles/styles.scss ./src/styles/styles.css --no-source-map --watch"

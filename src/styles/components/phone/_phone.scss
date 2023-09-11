@@ -1,0 +1,16 @@
+.phone {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid red;
+
+  main {
+    z-index: 15;
+    width: 30rem;
+    border: 1rem solid black;
+    border-radius: 4.2rem;
+  }
+}

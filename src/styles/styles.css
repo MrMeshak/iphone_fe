@@ -89,8 +89,8 @@ select {
   height: 100%;
   width: 100%;
   aspect-ratio: 9/19.4;
-  border: 1px solid black;
   border-radius: 3rem;
+  overflow: hidden;
 }
 .home img {
   position: absolute;
@@ -112,8 +112,8 @@ select {
   backdrop-filter: blur(2rem);
 }
 .home-dock__btn {
-  height: 6rem;
-  width: 6rem;
+  height: 80%;
+  aspect-ratio: 1/1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,6 +136,11 @@ select {
 #calcAppBtn svg {
   height: 4rem;
   fill: white;
+}
+
+#soundAppBtn {
+  font-size: 3rem;
+  background-color: white;
 }
 
 .calc {
@@ -365,4 +370,73 @@ select {
 .top-bar--dark {
   fill: black;
   color: black;
+}
+
+.sound {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+  aspect-ratio: 9/19.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #13232e;
+  border-radius: 3rem;
+  padding-top: 3rem;
+}
+.sound--hide {
+  display: none;
+}
+
+.sound-title {
+  padding: 2rem 2rem;
+}
+.sound-title h3 {
+  color: white;
+  font-size: 3rem;
+}
+
+.sound-board {
+  height: 100%;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sound-card {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #412e45;
+  border-radius: 2rem;
+  border: 4px #9e9199 solid;
+  cursor: pointer;
+}
+
+.phone {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid red;
+}
+.phone main {
+  z-index: 15;
+  width: 30rem;
+  border: 1rem solid black;
+  border-radius: 4.2rem;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  padding: 1rem 0rem 0rem 2.5rem;
 }

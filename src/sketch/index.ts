@@ -36,9 +36,9 @@ blueBtn?.addEventListener('click', () => actions.setColor('#0ea5e9'));
 purpleBtn?.addEventListener('click', () => actions.setColor('#8b5cf6'));
 blackBtn?.addEventListener('click', () => actions.setColor('#0f172a'));
 
-const calcApp = document.querySelector('#sketchApp');
+const sketchApp = document.querySelector('#sketchApp');
 const topBar = document.querySelector('#topBar');
 document.querySelector('#sketchHomeBtn')?.addEventListener('click', () => {
   topBar?.classList.remove('top-bar--dark');
-  calcApp?.classList.add('sketch--hide');
+  sketchApp?.classList.add('sketch--hide');
 });

@@ -1,0 +1,21 @@
+@use '../../abstracts';
+
+.sound {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+  aspect-ratio: 9 / 19.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: abstracts.$sound-storm;
+  border-radius: 3rem;
+  padding-top: 3rem;
+
+  &--hide {
+    display: none;
+  }
+}

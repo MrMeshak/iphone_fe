@@ -3,6 +3,8 @@ const sketchAppBtn = document.querySelector('#sketchAppBtn');
 const sketchApp = document.querySelector('#sketchApp');
 const calcAppBtn = document.querySelector('#calcAppBtn');
 const calcApp = document.querySelector('#calcApp');
+const soundAppBtn = document.querySelector('#soundAppBtn');
+const soundApp = document.querySelector('#soundApp');
 
 sketchAppBtn?.addEventListener('click', () => {
   sketchApp?.classList.remove('sketch--hide');
@@ -11,6 +13,10 @@ sketchAppBtn?.addEventListener('click', () => {
 
 calcAppBtn?.addEventListener('click', () => {
   calcApp?.classList.remove('calc--hide');
+});
+
+soundAppBtn?.addEventListener('click', () => {
+  soundApp?.classList.remove('sound--hide');
 });
 
 const timeElements = document.querySelectorAll('.time');
