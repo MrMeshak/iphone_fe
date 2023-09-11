@@ -426,7 +426,6 @@ select {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border: 1px solid red;
 }
 .phone main {
   z-index: 15;
