@@ -6,8 +6,8 @@ sounds.forEach((sound) => {
   button.appendChild(textNode);
   button.classList.add('sound-card');
 
-  button.addEventListener('click', () => {
-    document.querySelector<HTMLAudioElement>(`#${sound}`)?.play();
+  button.addEventListener('click', async () => {
+    await document.querySelector<HTMLAudioElement>(`#${sound}`)?.play();
   });
 
   const soundBoard = document.querySelector('#soundBoard');
