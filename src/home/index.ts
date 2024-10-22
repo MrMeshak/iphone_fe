@@ -21,7 +21,6 @@ soundAppBtn?.addEventListener('click', () => {
 
 const timeElements = document.querySelectorAll('.time');
 timeElements.forEach((element) => {
-  console.log(getCurrentTime());
   const textNode = document.createTextNode(getCurrentTime());
   element.innerHTML = '';
   element.append(textNode);
